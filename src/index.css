@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[url('/src/assets/light-bg.png')] bg-cover bg-center transition-all duration-500;
+  }
+
+  html.dark body {
+    @apply bg-[url('/src/assets/dark-bg.png')] bg-cover bg-center transition-all duration-500;
+  }
+}
+
+h1, h2, h3, p, span, a, li, div {
+  font-family: "Poppins", sans-serif;
+}
