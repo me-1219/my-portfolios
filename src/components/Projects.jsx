@@ -28,7 +28,7 @@ export default function Projects() {
       status: "Beta"
     },
     {
-      year: "2023",
+      year: "2025",
       title: "Portfolio Website",
       category: "",
       description: "A modern and responsive personal portfolio website built using React and TailwindCSS. Showcases my projects, skills, and experience with smooth animations and clean UI design.",
@@ -40,14 +40,14 @@ export default function Projects() {
       status: "Live"
     },
     {
-      year: "2023",
-      title: "Cryptocurrency Tracker",
-      category: "FinTech",
-      description: "Real-time cryptocurrency tracking application with portfolio management, price alerts, and advanced charting capabilities.",
-      technologies: ["React", "TypeScript", "CoinGecko API", "Recharts", "Firebase", "PWA"],
+      year: "2025",
+      title: "BMI(Body Mass Index) Calculator",
+      category: "Health",
+      description: "BMI-Calculator is a responsive web app built with React and Tailwind CSS.It allows users to calculate their Body Mass Index (BMI) using age, height, weight, and gender.",
+      technologies: ["React vite", "Tailwind CSS", "Lucide React icons", "React Hook Form"],
       image: "/projects/crypto-tracker.jpg",
-      liveUrl: "https://crypto-tracker-demo.com",
-      githubUrl: "https://github.com/username/crypto-tracker",
+      liveUrl: "https://bmi-calculators-beta.vercel.app",
+      githubUrl: "https://github.com/me-1219/BMI-Calculator",
       featured: false,
       status: "Live"
     },
