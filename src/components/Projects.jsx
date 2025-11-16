@@ -11,7 +11,7 @@ export default function Projects() {
       technologies: ["HTML", "Bootstrap", "JavaScript","PHP", "Ajax",  "MySQL", ],
       image: Ecomerce,
       liveUrl: "https://msglcd.com",
-      githubUrl: "https://github.com/username/ecommerce-platform",
+      githubUrl: "https://github.com/me-1219/phone-accessories-stores",
       featured: true,
       status: "Live"
     },
