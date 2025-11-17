@@ -18,7 +18,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 text-2xl font-medium">
           {[
-            { label: "Home", href: "#Hero" },
+            { label: "Home", href: "#" },
             { label: "About", href: "#About" },
             { label: "Projects", href: "#Projects" },
             { label: "Certifications", href: "#Certification" },

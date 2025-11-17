@@ -40,7 +40,7 @@ const Hero = () => {
 
   return (
     <section
-      id="Hero"
+      id="#"
       className="hero-bg flex flex-col-reverse md:flex-row items-center justify-between px-8 md:px-20 py-20 transition-colors duration-300 mt-auto overflow-hidden font-['Poppins'] text-gray-800 dark:text-gray-100"
     >
       <div className="hero-inner w-full flex flex-col md:flex-row items-center justify-between">
@@ -107,7 +107,7 @@ const Hero = () => {
                 <FaGithub className="text-gray-800 dark:text-gray-100 text-3xl" />
               </a>
               <a
-                href="https://linkedin.com/"
+                href="https://www.linkedin.com/in/mebtu-melak"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white dark:bg-gray-800 p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200 dark:border-gray-700"
