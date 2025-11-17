@@ -47,7 +47,7 @@ export default function Projects() {
       technologies: ["React vite", "Tailwind CSS", "Lucide React icons", "React Hook Form"],
       image: "/projects/crypto-tracker.jpg",
       liveUrl: "https://bmi-calculators-beta.vercel.app",
-      githubUrl: "https://github.com/me-1219/BMI-Calculator",
+      githubUrl: "https://github.com/me-1219/bmi-calculators",
       featured: false,
       status: "Live"
     },
