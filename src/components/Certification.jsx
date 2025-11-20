@@ -17,7 +17,7 @@ const Certificates = () => {
       title: "Fundamental Programing",
       issuer: "Udacity",
       date: "2024",
-      category: "Cloud",
+      category: "Programming",
       image: "/public/certificates/programming.png",
       credentialUrl: "https://www.udacity.com/certificate/e/0f634148-7aa2-11ef-ae47-67a49c42a227",
       skills: ["Python", "Problem Solving", "Algorithms"],
@@ -28,8 +28,8 @@ const Certificates = () => {
       title: "Data Analysis Fundamentals",
       issuer: "Udacity",
       date: "2024",
-      category: "Web Development",
-      image: "/public/certificates/Ai.png",
+      category: "Data Analysis",
+      image: "/public/certificates/data.png",
       credentialUrl: "https://www.udacity.com/certificate/e/dcbbdd42-7aa4-11ef-a0c9-eb8dcf715c4a",
       skills: ["python", "Pandas", "Data Visualization", "Matplotlib"," NumPy", "Data Cleaning"],
       description: "Data Analysis Fundamentals Nanodegree is to empower learners with the skills to analyze and visualize data effectively, enabling data-driven decision-making in various fields."
@@ -250,6 +250,9 @@ const Certificates = () => {
                         alt={selectedCertificate.title}
                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                       />
+                     </div>
+                      <div className="absolute inset-0 flex items-center justify-center">
+                      <Award className="w-16 h-16 text-orange-500 dark:text-orange-400" />
                      </div>
                   </div>
 
