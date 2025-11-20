@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import progImg from "../assets/programming.png";
 
 import { 
   ExternalLink, 
@@ -19,7 +18,7 @@ const Certificates = () => {
       issuer: "Udacity",
       date: "2024",
       category: "Cloud",
-      image: "progImg",
+      image: "/public/certificates/programming.png",
       credentialUrl: "https://www.udacity.com/certificate/e/0f634148-7aa2-11ef-ae47-67a49c42a227",
       skills: ["Python", "Problem Solving", "Algorithms"],
       description: "Foundational Through the Programming Fundamentals Nanodegree, I have developed essential programming skills, including problem-solving, algorithm design, and proficiency in Python."
@@ -30,7 +29,7 @@ const Certificates = () => {
       issuer: "Udacity",
       date: "2024",
       category: "Web Development",
-      image: "/certificates/react-meta.jpg",
+      image: "/public/certificates/Ai.png",
       credentialUrl: "https://www.udacity.com/certificate/e/dcbbdd42-7aa4-11ef-a0c9-eb8dcf715c4a",
       skills: ["python", "Pandas", "Data Visualization", "Matplotlib"," NumPy", "Data Cleaning"],
       description: "Data Analysis Fundamentals Nanodegree is to empower learners with the skills to analyze and visualize data effectively, enabling data-driven decision-making in various fields."
@@ -41,7 +40,7 @@ const Certificates = () => {
       issuer: "Udacity",
       date: "2024",
       category: "Mobile Development",
-      image: "/certificates/nodejs.jpg",
+      image: "/public/certificates/android.png",
       credentialUrl: "https://www.udacity.com/certificate/e/a752f142-50cc-11ef-bc93-7bd95d0266e7",
       skills: ["Java/Kotlin", "Android Studio", "Android SDK", "Gradle"],
       description: "This Certification Assessment evaluates your skills and knowledge in Android development to certify your readiness for real-world challenges in the field."
@@ -52,7 +51,7 @@ const Certificates = () => {
       issuer: "Simplilearn",
       date: "2025",
       category: "Cyber Security",
-      image: "/certificates/responsive-web-design.jpg",
+      image: "/public/certificates/cyber.png",
       credentialUrl: "https://lms.simplilearn.com/courses/3736/Introduction%20to%20Cyber%20Security/certificate/download-skillup",
       skills: ["Cybersecurity Basics", "Threat Analysis", "Network Security", "Risk Management"],
       description: " The 'Introduction to Cyber Security' course by Simplilearn provides a comprehensive overview of cybersecurity principles, threat analysis, and risk management strategies to protect digital assets."
@@ -154,12 +153,15 @@ const Certificates = () => {
             >
               {/* Certificate Image */}
               <div className="relative h-48 bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <div className="text-white text-center w-full">
-                    <p className="text-sm font-medium">Click to view details</p>
-                  </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40  flex items-end p-6">
+                  <div className="h-48 w-full overflow-hidden">
+                <img
+                  src={certificate.image}
+                  alt={certificate.title}
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                />
+              </div>
                 </div>
-
                 {/* Category Badge */}
                 <div className="absolute top-4 left-4">
                   <span className="px-3 py-1 bg-blue-500 text-white rounded-full text-xs font-medium">
@@ -240,12 +242,15 @@ const Certificates = () => {
 
                   {/* Certificate Image */}
                   <div className="h-48 bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 relative flex items-center justify-center">
-                    <Award className="w-20 h-20 text-blue-500/50 dark:text-blue-400/30" />
-                    <div className="absolute bottom-4 left-6">
-                      <span className="px-4 py-2 bg-blue-500 text-white rounded-xl text-sm font-medium">
-                        {selectedCertificate.category}
-                      </span>
-                    </div>
+                    
+                     <div className="h-48 w-full overflow-hidden">
+                     
+                      <img
+                        src={selectedCertificate.image}
+                        alt={selectedCertificate.title}
+                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                      />
+                     </div>
                   </div>
 
                   {/* Certificate Details */}
@@ -256,7 +261,7 @@ const Certificates = () => {
 
                     <div className="space-y-4 mb-6">
                       <div className="flex items-center gap-3">
-                        <Award className="w-5 h-5 text-blue-500" />
+                        <Award className="w-16 h-16 text-orange-500 dark:text-orange-400" />
                         <div>
                           <div className="text-sm text-gray-500 dark:text-gray-400">Issuer</div>
                           <div className="font-semibold text-gray-900 dark:text-white">
