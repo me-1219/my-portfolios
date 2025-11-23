@@ -1,6 +1,9 @@
 import React from "react";
+import Ecomerce from '../assets/ecomerce.png';
+import HoliyTrinitiy from '../assets/holytrinity.png';
+import Portfolio from '../assets/portfolio.png';
+import Bmi from '../assets/bmi.png';
 
-// Imported images MUST be inside src/assets/
 
 export default function Projects() {
   const featuredProjects = [
@@ -18,7 +21,7 @@ export default function Projects() {
         "Ajax",
         "MySQL",
       ],
-      image: '/public/projects/ecomerce.png',
+      image: Ecomerce,
       liveUrl: "https://msglcd.com",
       githubUrl: "https://github.com/me-1219/phone-accessories-stores",
       featured: true,
@@ -31,7 +34,7 @@ export default function Projects() {
       description:
         "Modern, responsive website for the Holy Trinity Ethiopian Orthodox Tewahedo Centre in Canberra, showcasing events, services, and community resources.",
       technologies: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
-      image: "/public/projects/holytrinity.png",
+      image: HoliyTrinitiy,
       liveUrl: "https://holytrinitycanberra.org.au/",
       githubUrl: "https://github.com/me-1219/Holy_Trinity_Canberra",
       featured: true,
@@ -44,7 +47,7 @@ export default function Projects() {
       description:
         "A modern and responsive personal portfolio website built using React and TailwindCSS.",
       technologies: ["React", "Tailwindcss"],
-      image: "/public/projects/portifolio.png",
+      image: Portfolio,
       liveUrl: "https://cv.melaklegacy.com.et",
       githubUrl: "https://github.com/me-1219/my-portfolios",
       featured: false,
@@ -57,7 +60,7 @@ export default function Projects() {
       description:
         "Responsive web app that calculates BMI using height, weight, gender, and age.",
       technologies: ["React", "Tailwind CSS", "Lucide Icons", "Hook Form"],
-      image: "/public/projects/bmi.png",
+      image: Bmi,
       liveUrl: "https://bmi-calculators-beta.vercel.app",
       githubUrl: "https://github.com/me-1219/bmi-calculators",
       featured: false,
@@ -70,7 +73,7 @@ export default function Projects() {
       description:
         "Collaborative task tool with Kanban boards, time tracking, and team collaboration.",
       technologies: ["React", "Redux", "Node.js", "MongoDB", "Socket.io", "Jest"],
-      image: "/projects/task-management.jpg",
+      image: "./projects/task-management.jpg",
       liveUrl: "https://taskapp-demo.com",
       githubUrl: "https://github.com/username/task-management",
       featured: false,
@@ -90,7 +93,7 @@ export default function Projects() {
         "PostgreSQL",
         "Docker",
       ],
-      image: "/projects/social-analytics.jpg",
+      image: "./projects/social-analytics.jpg",
       liveUrl: "https://social-analytics-demo.com",
       githubUrl: "https://github.com/username/social-analytics",
       featured: false,

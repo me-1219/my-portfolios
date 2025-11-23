@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Programing from '../assets/programming.png';
+import Data from '../assets/data.png';
+import Android from '../assets/android.png';
+import Cyber from '../assets/cyber.png';
+
 
 import { 
   ExternalLink, 
@@ -7,56 +12,64 @@ import {
   Calendar,
   X
 } from "lucide-react";
+import { data } from "autoprefixer";
 
 const Certificates = () => {
   const [selectedCertificate, setSelectedCertificate] = useState(null);
+const certificates = [
+  {
+    id: 1,
+    title: "Fundamental Programing",
+    issuer: "Udacity",
+    date: "2024",
+    category: "Programming",
+    image: Programing,
+    credentialUrl: "https://www.udacity.com/certificate/e/0f634148-7aa2-11ef-ae47-67a49c42a227",
+    skills: ["Python", "Problem Solving", "Algorithms"],
+    description:
+      "Foundational Through the Programming Fundamentals Nanodegree, I have developed essential programming skills, including problem-solving, algorithm design, and proficiency in Python.",
+  },
 
-  const certificates = [
-    {
-      id: 1,
-      title: "Fundamental Programing",
-      issuer: "Udacity",
-      date: "2024",
-      category: "Programming",
-      image: "/public/certificates/programming.png",
-      credentialUrl: "https://www.udacity.com/certificate/e/0f634148-7aa2-11ef-ae47-67a49c42a227",
-      skills: ["Python", "Problem Solving", "Algorithms"],
-      description: "Foundational Through the Programming Fundamentals Nanodegree, I have developed essential programming skills, including problem-solving, algorithm design, and proficiency in Python."
-    },
-    {
-      id: 2,
-      title: "Data Analysis Fundamentals",
-      issuer: "Udacity",
-      date: "2024",
-      category: "Data Analysis",
-      image: "/public/certificates/data.png",
-      credentialUrl: "https://www.udacity.com/certificate/e/dcbbdd42-7aa4-11ef-a0c9-eb8dcf715c4a",
-      skills: ["python", "Pandas", "Data Visualization", "Matplotlib"," NumPy", "Data Cleaning"],
-      description: "Data Analysis Fundamentals Nanodegree is to empower learners with the skills to analyze and visualize data effectively, enabling data-driven decision-making in various fields."
-    },
-    {
-      id: 3,
-      title: "Android Basics Nanodegree",
-      issuer: "Udacity",
-      date: "2024",
-      category: "Mobile Development",
-      image: "/public/certificates/android.png",
-      credentialUrl: "https://www.udacity.com/certificate/e/a752f142-50cc-11ef-bc93-7bd95d0266e7",
-      skills: ["Java/Kotlin", "Android Studio", "Android SDK", "Gradle"],
-      description: "This Certification Assessment evaluates your skills and knowledge in Android development to certify your readiness for real-world challenges in the field."
-    },
-    {
-      id: 4,
-      title: "Introduction to Cyber Security",
-      issuer: "Simplilearn",
-      date: "2025",
-      category: "Cyber Security",
-      image: "/public/certificates/cyber.png",
-      credentialUrl: "https://lms.simplilearn.com/courses/3736/Introduction%20to%20Cyber%20Security/certificate/download-skillup",
-      skills: ["Cybersecurity Basics", "Threat Analysis", "Network Security", "Risk Management"],
-      description: " The 'Introduction to Cyber Security' course by Simplilearn provides a comprehensive overview of cybersecurity principles, threat analysis, and risk management strategies to protect digital assets."
-    }
-  ];
+  {
+    id: 2,
+    title: "Data Analysis Fundamentals",
+    issuer: "Udacity",
+    date: "2024",
+    category: "Data Analysis",
+    image: Data,
+    credentialUrl: "https://www.udacity.com/certificate/e/dcbbdd42-7aa4-11ef-a0c9-eb8dcf715c4a",
+    skills: ["python", "Pandas", "Data Visualization", "Matplotlib", " NumPy", "Data Cleaning"],
+    description:
+      "Data Analysis Fundamentals Nanodegree is to empower learners with the skills to analyze and visualize data effectively, enabling data-driven decision-making in various fields.",
+  },
+
+  {
+    id: 3,
+    title: "Android Basics Nanodegree",
+    issuer: "Udacity",
+    date: "2024",
+    category: "Mobile Development",
+    image: Android,
+    credentialUrl: "https://www.udacity.com/certificate/e/a752f142-50cc-11ef-bc93-7bd95d0266e7",
+    skills: ["Java/Kotlin", "Android Studio", "Android SDK", "Gradle"],
+    description:
+      "This Certification Assessment evaluates your skills and knowledge in Android development to certify your readiness for real-world challenges in the field.",
+  },
+
+  {
+    id: 4,
+    title: "Introduction to Cyber Security",
+    issuer: "Simplilearn",
+    date: "2025",
+    category: "Cyber Security",
+    image: Cyber,
+    credentialUrl:
+      "https://lms.simplilearn.com/courses/3736/Introduction%20to%20Cyber%20Security/certificate/download-skillup",
+    skills: ["Cybersecurity Basics", "Threat Analysis", "Network Security", "Risk Management"],
+    description:
+      "The 'Introduction to Cyber Security' course by Simplilearn provides a comprehensive overview of cybersecurity principles, threat analysis, and risk management strategies to protect digital assets.",
+  },
+];
 
   const stats = [
     { number: "4", label: "Certificates", color: "text-blue-500" },
