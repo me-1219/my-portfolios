@@ -61,7 +61,7 @@ const Certificates = () => {
   const stats = [
     { number: "4", label: "Certificates", color: "text-blue-500" },
     { number: "3", label: "Categories", color: "text-green-500" },
-    { number: "2022-2024", label: "Timeline", color: "text-purple-500" },
+    { number: "2023-2025", label: "Timeline", color: "text-purple-500" },
     { number: "100%", label: "Verified", color: "text-orange-500" }
   ];
 
